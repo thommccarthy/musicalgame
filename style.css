@@ -1,0 +1,119 @@
+.bg { background-color: thistle; }
+
+h2 {
+	font-family: 'Ultra', serif;
+	color: #b2226a;
+	font-weight: lighter;
+	font-size: 2em;
+	text-shadow: 1px 1px grey;
+	text-align: center;
+}
+
+
+
+.headertext {
+	display: block;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	top: 2%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	font-family: 'Oswald', serif;
+	font-size: 3em;
+	text-decoration: underline;
+	border: solid firebrick 1px;
+	border-radius: 5px;
+	padding: 2%;
+	background-color: oldlace;
+	color: firebrick;
+	box-shadow: -5px 5px 0px 2px 	#c5c5c5;
+         text-shadow: 0 4px 1px thistle;
+}
+
+
+
+/*.spacing {
+	display: block;
+	color: black;
+
+}*/
+
+.buttonspacing {
+	
+	position: relative;
+	width: 4em;
+	height: 4em;
+	display: block;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: thistle;
+	background-color: firebrick;
+	box-shadow: 0px 4px 4px 0px orchid;
+}
+
+.buttonspacing:focus { outline: none; }
+
+
+.displaystyle {
+	height: 50px;
+	width: 50%;
+	padding-top: 8px;
+	background-color: oldlace;
+	border: solid firebrick 1px;
+	border-radius: 6px;
+	font-family: 'Oswald', sans serif;
+	font-size: 20px;
+	display: /*inline-*/block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	box-shadow: 0px 5px 4px 0px firebrick;
+	overflow: auto;
+}
+
+
+
+
+/*.wrapper {
+	margin-top: 50px;
+	display: inline-grid;
+	flex: wrap;
+
+}*/
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	/*flex: wrap;*/
+	justify-content: center;
+	
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
