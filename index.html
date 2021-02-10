@@ -9,7 +9,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
@@ -19,37 +18,48 @@
 <div class="flex">
 
 	<div id="keysarea">
-		<h2>Key:</h2>
+		<h2>Key</h2>
 		<div id="keydisplay" class="displaystyle">...</div>
 	</div>
 	<button id="keysbutton" class="buttonspacing">Roll!</button>
 
 	<div id="tempoarea">
-		<h2>Tempo:</h2>
+		<h2>Tempo</h2>
 		<div id="tempodisplay" class="displaystyle">...</div>
 	</div>
 	<button id="tempobutton" class="buttonspacing">Roll!</button>
 
 	<div id="partssarea">
-		<h2>Parts:</h2>
+		<h2>Parts</h2>
 		<div id="partsdisplay" class="displaystyle">...</div>
 	</div>
 	<button id="partsbutton" class="buttonspacing">Roll!</button>
 
-	<div id="modesarea">
-		<h2>Mode:</h2>
+<section class="modegrid">
+	<div class="qualityheader">
+		<h2><input type="radio" id="qualityheader">Quality</h2>
+	</div>
+	<div class="modeheader">
+		<h2><input type="radio" id="qualityheader">Mode</h2>
+	</div>
+	<div id="modesarea" class="childgrid">
+		<!-- <input type="radio" name="mode" class="input"> -->
+		<!-- <h2 id="modeheader">Mode</h2> -->
 		<div id="modesdisplay" class="displaystyle">...</div>
-	</div>
-	<button id="modesbutton" class="buttonspacing">Roll!</button>
 	
-	<div id="qualityarea">
-		<h2>Quality:</h2>
-		<div id="qualitydisplay" class="displaystyle">...</div>
+	<button id="modesbutton" class="buttonspacing">Roll!</button>
 	</div>
+
+	<div id="qualityarea" class="childgrid">
+
+		<div id="qualitydisplay" class="displaystyle">...</div>
+	
 	<button id="qualitybutton" class="buttonspacing">Roll!</button>
+	</div>
+</section>
 
 	<div id="timetoparea">
-		<h2>Time Signature:</h2>
+		<h2>Time Signature</h2>
 		<div id="timetopdisplay" class="displaystyle">...</div>
 	</div>
 	<button id="timetopbutton" class="buttonspacing">Roll!</button>
@@ -60,6 +70,8 @@
 	</div> -->
 	<!-- <button id="timebottombutton" class="buttonspacing">Roll!</button> -->
 </div>
+
+<!-- <footer>built by thommccarthy 2021</footer> -->
 
 
 <script src="script.js"></script>

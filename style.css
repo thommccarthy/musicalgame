@@ -9,6 +9,16 @@ h2 {
 	text-align: center;
 }
 
+#checkbox1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 5vh;
+	width: 5vh;
+	background-color: thistle;
+	color: firebrick;
+	border-radius: 20%;
+}
 
 
 .headertext {
@@ -121,3 +131,51 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+footer {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.modegrid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  	grid-template-rows: auto 1fr;
+}
+
+#modesarea {
+	grid-area: 2/1/2/6;
+}
+
+#qualityarea {
+	grid-area: 2/1/2/6;
+}
+
+.childgrid {
+	/*grid-area: span 8;*/
+}
+
+.qualityheader {
+	grid-column-start: 2;
+	margin-left: 100px;
+
+}
+
+.modeheader {
+	grid-column-start: 4;
+	margin-right: 100px;
+}
+
+#qualitydisplay {
+	visibility: hidden;
+}
+
+#qualitybutton {
+	visibility: hidden;
+}
+

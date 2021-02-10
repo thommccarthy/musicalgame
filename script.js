@@ -31,54 +31,60 @@ let modesButton = document.getElementById("modesbutton");
 let timeTopButton = document.getElementById("timetopbutton");
 let timeBottomButton = document.getElementById("timebottombutton");
 let tempoButton = document.getElementById("tempobutton");
+let qualityHeader = document.getElementById("qualityheader");
 
+function qualityClick() {
+	console.log("QUALITY");
+}
+
+qualityHeader.addEventListener("click", qualityClick);
 
 function displayKey() {
 	const randomKey = Math.floor(Math.random() * (keysArray.length));
 	document.getElementById('keydisplay').innerHTML = keysArray[randomKey];
-	console.log(keysArray[randomKey]);
+	// console.log(keysArray[randomKey]);
 
 }
 
 function displayTempo() {
 	const randomTempo = Math.floor(Math.random() * (tempoArray.length));
 	document.getElementById('tempodisplay').innerHTML = tempoArray[randomTempo];
-	console.log(tempoArray[randomTempo]);
+	// console.log(tempoArray[randomTempo]);
 
 }
 
 function displayMode() {
 	const randomMode = Math.floor(Math.random() * (modesArray.length));
 	document.getElementById('modesdisplay').innerHTML = modesArray[randomMode];
-	console.log(modesArray[randomMode]);
+	// console.log(modesArray[randomMode]);
 
 }
 
 function displayParts() {
 	const randomParts = Math.floor(Math.random() * (partsArray.length));
 	document.getElementById('partsdisplay').innerHTML = partsArray[randomParts];
-	console.log(partsArray[randomParts]);
+	// console.log(partsArray[randomParts]);
 
 }
 
 function displayQuality() {
 	const randomQuality = Math.floor(Math.random() * (qualityArray.length));
 	document.getElementById('qualitydisplay').innerHTML = qualityArray[randomQuality];
-	console.log(qualityArray[randomQuality]);
+	// console.log(qualityArray[randomQuality]);
 
 }
 
 function displayTimeTop() {
 	const randomTimeTop = Math.floor(Math.random() * (timeSigTop.length));
 	document.getElementById('timetopdisplay').innerHTML = timeSigTop[randomTimeTop];
-	console.log(timeSigTop[randomTimeTop]);
+	// console.log(timeSigTop[randomTimeTop]);
 
 }
 
 function displayTimeBottom() {
 	const randomTimeBottom = Math.floor(Math.random() * (timeSigBottom.length));
 	document.getElementById('timebottomdisplay').innerHTML = timeSigBottom[randomTimeBottom];
-	console.log(timeSigBottom[randomTimeBottom]);
+	// console.log(timeSigBottom[randomTimeBottom]);
 
 }
 
