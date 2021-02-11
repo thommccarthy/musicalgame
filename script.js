@@ -35,12 +35,6 @@ let qualityHeader = document.getElementById("qualityheader");
 let qualityRadio = document.getElementById("qualityradio");
 let modeRadio = document.getElementById("moderadio");
 
-
-
-function qualityClick() {
-	console.log("QUALITY");
-}
-
 function displayKey() {
 	const randomKey = Math.floor(Math.random() * (keysArray.length));
 	document.getElementById('keydisplay').innerHTML = keysArray[randomKey];
