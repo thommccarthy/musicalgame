@@ -12,35 +12,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
+<!-- header -->
 <body class="pattern-diagonal-lines-xl">
 	<h1 class="headertext">Way Cool Musical Randomizer</h1>
 
 <div class="flex">
-
+<!-- key -->
 	<div id="keysarea">
 		<h2>Key</h2>
 		<div id="keydisplay" class="displaystyle">...</div>
 	</div>
 	<button id="keysbutton" class="buttonspacing">Roll!</button>
-
+<!-- tempo -->
 	<div id="tempoarea">
 		<h2>Tempo</h2>
 		<div id="tempodisplay" class="displaystyle">...</div>
 	</div>
 	<button id="tempobutton" class="buttonspacing">Roll!</button>
-
+<!-- parts -->
 	<div id="partssarea">
 		<h2>Parts</h2>
 		<div id="partsdisplay" class="displaystyle">...</div>
 	</div>
 	<button id="partsbutton" class="buttonspacing">Roll!</button>
 
+<!-- gridstart -->
 <section class="modegrid">
 	<div class="qualityheader">
-		<h2><input type="radio" name="modequality" id="qualityheader">Quality</h2>
+		<h2><input type="radio" name="modequality" value="qualityclicked" checked id="qualityradio">Quality</h2>
 	</div>
 	<div class="modeheader">
-		<h2><input type="radio" name="modequality" id="qualityheader">Mode</h2>
+		<h2><input type="radio" name="modequality" value="modeclicked" id="moderadio">Mode</h2>
 	</div>
 	<div id="modesarea" class="childgrid">
 		<!-- <input type="radio" name="mode" class="input"> -->
@@ -63,15 +65,7 @@
 		<div id="timetopdisplay" class="displaystyle">...</div>
 	</div>
 	<button id="timetopbutton" class="buttonspacing">Roll!</button>
-
-	<!-- <div id="timebottomarea" class="spacing">
-		<h2>Time Signature Bottom:</h2>
-		<div id="timebottomdisplay" class="displaystyle">...</div>
-	</div> -->
-	<!-- <button id="timebottombutton" class="buttonspacing">Roll!</button> -->
 </div>
-
-<!-- <footer>built by thommccarthy 2021</footer> -->
 
 
 <script src="script.js"></script>

@@ -32,60 +32,77 @@ let timeTopButton = document.getElementById("timetopbutton");
 let timeBottomButton = document.getElementById("timebottombutton");
 let tempoButton = document.getElementById("tempobutton");
 let qualityHeader = document.getElementById("qualityheader");
+let qualityRadio = document.getElementById("qualityradio");
+let modeRadio = document.getElementById("moderadio");
+
+
 
 function qualityClick() {
 	console.log("QUALITY");
 }
 
-qualityHeader.addEventListener("click", qualityClick);
-
 function displayKey() {
 	const randomKey = Math.floor(Math.random() * (keysArray.length));
 	document.getElementById('keydisplay').innerHTML = keysArray[randomKey];
-	// console.log(keysArray[randomKey]);
-
+	
 }
 
 function displayTempo() {
 	const randomTempo = Math.floor(Math.random() * (tempoArray.length));
 	document.getElementById('tempodisplay').innerHTML = tempoArray[randomTempo];
-	// console.log(tempoArray[randomTempo]);
-
+	
 }
 
 function displayMode() {
 	const randomMode = Math.floor(Math.random() * (modesArray.length));
 	document.getElementById('modesdisplay').innerHTML = modesArray[randomMode];
-	// console.log(modesArray[randomMode]);
-
+	
 }
 
 function displayParts() {
 	const randomParts = Math.floor(Math.random() * (partsArray.length));
 	document.getElementById('partsdisplay').innerHTML = partsArray[randomParts];
-	// console.log(partsArray[randomParts]);
-
+	
 }
 
 function displayQuality() {
 	const randomQuality = Math.floor(Math.random() * (qualityArray.length));
 	document.getElementById('qualitydisplay').innerHTML = qualityArray[randomQuality];
-	// console.log(qualityArray[randomQuality]);
+	
 
 }
 
 function displayTimeTop() {
 	const randomTimeTop = Math.floor(Math.random() * (timeSigTop.length));
 	document.getElementById('timetopdisplay').innerHTML = timeSigTop[randomTimeTop];
-	// console.log(timeSigTop[randomTimeTop]);
+	
 
 }
 
 function displayTimeBottom() {
 	const randomTimeBottom = Math.floor(Math.random() * (timeSigBottom.length));
 	document.getElementById('timebottomdisplay').innerHTML = timeSigBottom[randomTimeBottom];
-	// console.log(timeSigBottom[randomTimeBottom]);
+	
 
+}
+
+let qualityDisplay = document.getElementById('qualitydisplay');
+let modesDisplay = document.getElementById('modesdisplay');
+
+function modeRadioClick() {
+	modesDisplay.style.display='block';
+	modesButton.style.display='block';
+	qualityDisplay.style.display='none';
+	qualityButton.style.display='none';	
+
+}
+
+function qualityRadioClick() {
+	qualityDisplay.style.display='block';
+	qualityButton.style.display='block';
+	modesDisplay.style.display='none';
+	modesButton.style.display='none';
+	
 }
 
 keysButton.addEventListener('click', displayKey, false);
@@ -94,3 +111,5 @@ partsButton.addEventListener('click', displayParts, false);
 qualityButton.addEventListener('click', displayQuality, false);
 timeTopButton.addEventListener('click', displayTimeTop, false);
 tempoButton.addEventListener('click', displayTempo, false);
+modeRadio.addEventListener('click', modeRadioClick, false);
+qualityRadio.addEventListener('click', qualityRadioClick, false);

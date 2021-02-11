@@ -94,16 +94,6 @@ h2 {
 	overflow: auto;
 }
 
-
-
-
-/*.wrapper {
-	margin-top: 50px;
-	display: inline-grid;
-	flex: wrap;
-
-}*/
-
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -111,7 +101,7 @@ h2 {
 	
 }
 
-
+/*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -148,16 +138,15 @@ footer {
   	grid-template-rows: auto 1fr;
 }
 
+
 #modesarea {
+	/*display: none;*/
 	grid-area: 2/1/2/6;
+
 }
 
 #qualityarea {
 	grid-area: 2/1/2/6;
-}
-
-.childgrid {
-	/*grid-area: span 8;*/
 }
 
 .qualityheader {
@@ -171,11 +160,11 @@ footer {
 	margin-right: 100px;
 }
 
-#qualitydisplay {
-	visibility: hidden;
+#modesbutton {
+	display:none;
 }
 
-#qualitybutton {
-	visibility: hidden;
+#modesdisplay {
+	display:none;
 }
 
